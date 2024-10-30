@@ -195,12 +195,13 @@
 .buttonSection {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
   gap: 1rem;
   align-items: flex-start;
   padding: 1rem;
   position: relative;
-  left: 70px;
-  width: 280px;
+  width: 400px;
+  height: 100%;
 }
 
 .footer {
@@ -359,6 +360,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  margin-left: 5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -385,7 +387,7 @@
   border: 1px solid #e0e7ff;
   border-radius: 0.75rem;
   margin-top: 1rem;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.40rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
