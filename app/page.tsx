@@ -80,7 +80,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <a href="https://docs.novu.co/workflows/introduction" className={styles.link}>
+                  <a href="https://docs.novu.co/workflows/introduction/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" className={styles.link}>
                     Learn more about workflows
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M7 7h10v10M7 17L17 7" />
@@ -100,7 +100,7 @@ export default function Home() {
                   <pre className={styles.codeBlock}>
                     <code>{`<Inbox />`}</code>
                   </pre>
-                  <a href="https://docs.novu.co/inbox/introduction" className={styles.link}>
+                  <a href="https://docs.novu.co/inbox/introduction/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" className={styles.link}>
                     Learn more about Inbox
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M7 7h10v10M7 17L17 7" />
@@ -121,7 +121,7 @@ export default function Home() {
                     <strong>Example:</strong>
                     <p>A user receives 100 notifications in a short amount of time, but you only want to notify them once per hour.</p>
                   </div>
-                  <a href="https://docs.novu.co/workflows/digest" className={styles.link}>
+                  <a href="https://docs.novu.co/workflows/digest/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" className={styles.link}>
                     Learn more about Digest
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M7 7h10v10M7 17L17 7" />
@@ -159,7 +159,7 @@ export default function Home() {
                     </li>
                   </ul>
                   
-                  <a href="https://docs.novu.co/workflow/delay" className={styles.link}>
+                  <a href="https://docs.novu.co/workflow/delay/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" className={styles.link}>
                     Learn more about Delay
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M7 7h10v10M7 17L17 7" />
@@ -200,30 +200,25 @@ export default function Home() {
           <div className={styles.footerSection}>
             <h3>Resources</h3>
             <ul>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">API Reference</a></li>
-              <li><a href="#">Tutorials</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="https://docs.novu.co/getting-started/introduction/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" target="_blank">Documentation</a></li>
+              <li><a href="https://docs.novu.co/api-reference/overview/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" target="_blank">API Reference</a></li>
+              <li><a href="https://novu.co/blog/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" target="_blank">Blog</a></li>
             </ul>
           </div>
 
           <div className={styles.footerSection}>
             <h3>Community</h3>
             <ul>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Discord</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Stack Overflow</a></li>
+              <li><a href="https://github.com/novuhq/novu" target="_blank">GitHub</a></li>
+              <li><a href="https://discord.novu.co" target="_blank">Discord</a></li>
+              <li><a href="https://twitter.com/novuhq" target="_blank">Twitter</a></li>
             </ul>
           </div>
 
           <div className={styles.footerSection}>
             <h3>Company</h3>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Partners</a></li>
+              <li><a href="https://novu.co/contact-us/?utm_campaign=nextjs-starter&utm_source=nextjs-starter&utm_medium=nextjs" target="_blank">Contact</a></li>
             </ul>
           </div>
         </div>
