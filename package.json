@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@novu/framework": "^2.3.0",
+    "@novu/js": "^2.5.0",
     "@novu/nextjs": "^2.5.0",
     "@novu/node": "^2.0.1",
+    "@novu/react": "^2.5.0",
     "next": "15.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
