@@ -194,10 +194,13 @@
 
 .buttonSection {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
   padding: 1rem;
   position: relative;
   left: 70px;
+  width: 280px;
 }
 
 .footer {
@@ -347,6 +350,7 @@
   display: inline-flex;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
+  margin-top: 5rem;
   font-size: 0.95rem;
   font-weight: 500;
   color: #ffffff;
@@ -374,4 +378,39 @@
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
+}
+
+.connectionMessage {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  border: 1px solid #e0e7ff;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.connectionText {
+  color: #4B5563;
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.connectionText code {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+  color: #4f46e5;
+  border: 1px solid rgba(224, 231, 255, 0.6);
+  font-weight: 500;
 }

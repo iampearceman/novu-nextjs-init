@@ -1,10 +1,34 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { NovuInbox } from "./components/NovuInbox"
 import Image from "next/image"
 import styles from './page.module.css'
 
 export default function Home() {
+  const [isNovuConnected, setIsNovuConnected] = useState(false);
+
+  useEffect(() => {
+    const checkNovuConnection = async () => {
+      try {
+        const response = await fetch('/api/dev-studio-status');
+        const data = await response.json();
+        setIsNovuConnected(data.connected);
+        
+        if (!data.connected) {
+          console.log('Novu connection failed:', data.error);
+        }
+      } catch (error) {
+        console.error('Novu connection error:', error);
+        setIsNovuConnected(false);
+      }
+    };
+
+    checkNovuConnection();
+    const interval = setInterval(checkNovuConnection, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const triggerNotification = async () => {
     try {
       const response = await fetch('/api/trigger', {
@@ -172,12 +196,27 @@ export default function Home() {
             <div className={styles.divider} />
 
             <div className={styles.buttonSection}>
-              <button 
-                className={styles.button}
-                onClick={triggerNotification}
-              >
-                Trigger a notification
-              </button>
+              {isNovuConnected ? (
+                <button 
+                  className={styles.button}
+                  onClick={triggerNotification}
+                >
+                  Trigger a notification
+                </button>
+              ) : (
+                <div className={styles.connectionMessage}>
+                  <div className={styles.connectionContent}>
+                    </div>
+                    <div className={styles.connectionText}>
+                        <h4>Connection Required</h4>
+                        <br />
+                      <p>Run the following command to start:</p>
+                      <code className={styles.commandCode}>
+                        npx novu@latest dev --port 4000
+                      </code>
+                    </div>
+                  </div>
+              )}
             </div>
           </div>
         </div>
